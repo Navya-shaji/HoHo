@@ -1,0 +1,180 @@
+.tree-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.2));
+    animation: treeFloat 4s ease-in-out infinite;
+}
+
+.star {
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    margin-bottom: -15px;
+    animation: starTwinkle 1.5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 10px #ffd700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree-layer {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 120px solid #2d5a27;
+    position: relative;
+    border-radius: 20px;
+}
+
+.top-layer {
+    border-bottom: 100px solid #439c4f;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    z-index: 3;
+}
+
+.middle-layer {
+    border-bottom: 140px solid #2e7d32;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    margin-top: -60px;
+    z-index: 2;
+}
+
+.bottom-layer {
+    border-bottom: 180px solid #1b5e20;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.trunk {
+    width: 60px;
+    height: 60px;
+    background: #5d4037;
+    margin-top: -20px;
+    border-radius: 5px;
+}
+
+.ornament {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px currentColor;
+    animation: ornamentGlow 2s infinite alternate;
+}
+
+.o1 {
+    background: #ff6b6b;
+    top: 80px;
+    left: 130px;
+    z-index: 4;
+}
+
+.o2 {
+    background: #ffd700;
+    top: 160px;
+    left: 100px;
+    z-index: 4;
+}
+
+.o3 {
+    background: #4ecdc4;
+    top: 180px;
+    left: 180px;
+    z-index: 4;
+}
+
+.o4 {
+    background: #ff6b6b;
+    top: 250px;
+    left: 70px;
+    z-index: 4;
+}
+
+.o5 {
+    background: #ffd700;
+    top: 230px;
+    left: 220px;
+    z-index: 4;
+}
+
+.o6 {
+    background: #fff;
+    top: 280px;
+    left: 150px;
+    z-index: 4;
+}
+
+.gift-box {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    animation: bounce 2s infinite;
+}
+
+.g1 {
+    left: 50px;
+    animation-delay: 0s;
+}
+
+.g2 {
+    right: 50px;
+    animation-delay: 0.5s;
+}
+
+.g3 {
+    left: 120px;
+    bottom: -10px;
+    animation-delay: 1s;
+    font-size: 3rem;
+}
+
+@keyframes starTwinkle {
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    to {
+        transform: scale(1.2) rotate(10deg);
+        opacity: 1;
+        text-shadow: 0 0 30px #ffd700;
+    }
+}
+
+@keyframes ornamentGlow {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.5);
+    }
+}
+
+@keyframes treeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .tree-container {
+        transform: scale(0.8);
+        margin-top: 2rem;
+    }
+}

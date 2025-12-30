@@ -1,0 +1,247 @@
+{
+    "route": [
+        {
+            "id": 1,
+            "country": "New Zealand",
+            "city": "Auckland",
+            "coordinates": [
+                -36.8485,
+                174.7633
+            ],
+            "timezone": "Pacific/Auckland",
+            "estimatedTime": "18:00",
+            "giftsDelivered": 125000
+        },
+        {
+            "id": 2,
+            "country": "Australia",
+            "city": "Sydney",
+            "coordinates": [
+                -33.8688,
+                151.2093
+            ],
+            "timezone": "Australia/Sydney",
+            "estimatedTime": "19:30",
+            "giftsDelivered": 520000
+        },
+        {
+            "id": 3,
+            "country": "Japan",
+            "city": "Tokyo",
+            "coordinates": [
+                35.6762,
+                139.6503
+            ],
+            "timezone": "Asia/Tokyo",
+            "estimatedTime": "20:15",
+            "giftsDelivered": 890000
+        },
+        {
+            "id": 4,
+            "country": "China",
+            "city": "Beijing",
+            "coordinates": [
+                39.9042,
+                116.4074
+            ],
+            "timezone": "Asia/Shanghai",
+            "estimatedTime": "21:00",
+            "giftsDelivered": 1200000
+        },
+        {
+            "id": 5,
+            "country": "India",
+            "city": "Mumbai",
+            "coordinates": [
+                19.0760,
+                72.8777
+            ],
+            "timezone": "Asia/Kolkata",
+            "estimatedTime": "21:45",
+            "giftsDelivered": 950000
+        },
+        {
+            "id": 6,
+            "country": "United Arab Emirates",
+            "city": "Dubai",
+            "coordinates": [
+                25.2048,
+                55.2708
+            ],
+            "timezone": "Asia/Dubai",
+            "estimatedTime": "22:30",
+            "giftsDelivered": 340000
+        },
+        {
+            "id": 7,
+            "country": "South Africa",
+            "city": "Cape Town",
+            "coordinates": [
+                -33.9249,
+                18.4241
+            ],
+            "timezone": "Africa/Johannesburg",
+            "estimatedTime": "23:00",
+            "giftsDelivered": 280000
+        },
+        {
+            "id": 8,
+            "country": "Egypt",
+            "city": "Cairo",
+            "coordinates": [
+                30.0444,
+                31.2357
+            ],
+            "timezone": "Africa/Cairo",
+            "estimatedTime": "23:30",
+            "giftsDelivered": 420000
+        },
+        {
+            "id": 9,
+            "country": "Greece",
+            "city": "Athens",
+            "coordinates": [
+                37.9838,
+                23.7275
+            ],
+            "timezone": "Europe/Athens",
+            "estimatedTime": "00:00",
+            "giftsDelivered": 180000
+        },
+        {
+            "id": 10,
+            "country": "Italy",
+            "city": "Rome",
+            "coordinates": [
+                41.9028,
+                12.4964
+            ],
+            "timezone": "Europe/Rome",
+            "estimatedTime": "00:30",
+            "giftsDelivered": 450000
+        },
+        {
+            "id": 11,
+            "country": "France",
+            "city": "Paris",
+            "coordinates": [
+                48.8566,
+                2.3522
+            ],
+            "timezone": "Europe/Paris",
+            "estimatedTime": "01:00",
+            "giftsDelivered": 520000
+        },
+        {
+            "id": 12,
+            "country": "United Kingdom",
+            "city": "London",
+            "coordinates": [
+                51.5074,
+                -0.1278
+            ],
+            "timezone": "Europe/London",
+            "estimatedTime": "01:30",
+            "giftsDelivered": 580000
+        },
+        {
+            "id": 13,
+            "country": "Spain",
+            "city": "Madrid",
+            "coordinates": [
+                40.4168,
+                -3.7038
+            ],
+            "timezone": "Europe/Madrid",
+            "estimatedTime": "02:00",
+            "giftsDelivered": 390000
+        },
+        {
+            "id": 14,
+            "country": "Germany",
+            "city": "Berlin",
+            "coordinates": [
+                52.5200,
+                13.4050
+            ],
+            "timezone": "Europe/Berlin",
+            "estimatedTime": "02:30",
+            "giftsDelivered": 610000
+        },
+        {
+            "id": 15,
+            "country": "Russia",
+            "city": "Moscow",
+            "coordinates": [
+                55.7558,
+                37.6173
+            ],
+            "timezone": "Europe/Moscow",
+            "estimatedTime": "03:00",
+            "giftsDelivered": 720000
+        },
+        {
+            "id": 16,
+            "country": "Brazil",
+            "city": "Rio de Janeiro",
+            "coordinates": [
+                -22.9068,
+                -43.1729
+            ],
+            "timezone": "America/Sao_Paulo",
+            "estimatedTime": "03:45",
+            "giftsDelivered": 680000
+        },
+        {
+            "id": 17,
+            "country": "Argentina",
+            "city": "Buenos Aires",
+            "coordinates": [
+                -34.6037,
+                -58.3816
+            ],
+            "timezone": "America/Argentina/Buenos_Aires",
+            "estimatedTime": "04:15",
+            "giftsDelivered": 320000
+        },
+        {
+            "id": 18,
+            "country": "Mexico",
+            "city": "Mexico City",
+            "coordinates": [
+                19.4326,
+                -99.1332
+            ],
+            "timezone": "America/Mexico_City",
+            "estimatedTime": "04:45",
+            "giftsDelivered": 540000
+        },
+        {
+            "id": 19,
+            "country": "United States",
+            "city": "New York",
+            "coordinates": [
+                40.7128,
+                -74.0060
+            ],
+            "timezone": "America/New_York",
+            "estimatedTime": "05:15",
+            "giftsDelivered": 1850000
+        },
+        {
+            "id": 20,
+            "country": "Canada",
+            "city": "Toronto",
+            "coordinates": [
+                43.6532,
+                -79.3832
+            ],
+            "timezone": "America/Toronto",
+            "estimatedTime": "05:45",
+            "giftsDelivered": 420000
+        }
+    ],
+    "totalDistance": 510000,
+    "totalGifts": 12000000,
+    "startTime": "2024-12-24T18:00:00Z"
+}

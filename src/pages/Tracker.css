@@ -1,0 +1,287 @@
+.tracker-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.tracker-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tracker-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #000000, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+}
+
+.tracker-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #4a5568;
+    margin: 0;
+}
+
+.status-message {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(78, 205, 196, 0.2);
+    border: 1px solid rgba(78, 205, 196, 0.4);
+    border-radius: 8px;
+    color: #4ecdc4;
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.christmas-badge {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 198, 255, 0.2), rgba(0, 114, 255, 0.2));
+    border: 2px solid #0072ff;
+    border-radius: 12px;
+    color: #0072ff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(0, 114, 255, 0.4);
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+    }
+}
+
+/* Countdown Section */
+.countdown-section {
+    margin-bottom: 2rem;
+}
+
+/* Main Content Layout */
+.tracker-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    min-height: 600px;
+}
+
+.map-section {
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.story-section {
+    height: 600px;
+}
+
+/* Stats Section */
+.stats-section {
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .tracker-main {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+@media (max-width: 968px) {
+    .tracker-main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .map-section {
+        height: 500px;
+    }
+
+    .story-section {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tracker-container {
+        padding: 1rem;
+    }
+
+    .tracker-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .tracker-main {
+        gap: 1rem;
+        min-height: auto;
+    }
+
+    .map-section {
+        height: 400px;
+    }
+
+    .story-section {
+        height: 350px;
+    }
+
+    .countdown-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .stats-section {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tracker-container {
+        padding: 0.5rem;
+    }
+
+    .map-section {
+        height: 300px;
+    }
+
+    .story-section {
+        height: 300px;
+    }
+}
+
+/* Journey Log Styles */
+.journey-log-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.log-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+    text-shadow: none;
+}
+
+.journey-log-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.log-entry {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 5px solid #4ecdc4;
+}
+
+.log-entry:hover {
+    transform: translateY(-5px);
+}
+
+.log-entry.current-stop {
+    border-left: 5px solid #ff6b6b;
+    background: linear-gradient(to right bottom, #fff, #fff9f9);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.15);
+    order: -1;
+    /* Ensure it stays first if grid reflows differently, though array reverse handles this */
+    grid-column: 1 / -1;
+    /* Make latest stop full width */
+}
+
+.log-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.log-location {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.log-emoji {
+    font-size: 1.5rem;
+    background: #f0f4f8;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.log-city-name {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.live-badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    animation: pulse 2s infinite;
+}
+
+.log-story-text {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.santa-note {
+    font-family: 'Handlee', 'Comic Sans MS', cursive;
+    /* Handwritten feel */
+    background: #fdf6e3;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.santa-signature {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #c0392b;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
