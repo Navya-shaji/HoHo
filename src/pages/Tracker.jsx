@@ -57,7 +57,7 @@ function Tracker() {
         <>
             <div className="tracker-container">
                 <div className="tracker-header">
-                    <h1 className="tracker-title">🌟 Santa's Magical Journey Around the World 🌍</h1>
+                    <h1 className="tracker-title">Santa's Magical Journey Around the World </h1>
                     <p className="tracker-subtitle">
                         Watch the magic unfold as Santa spreads joy across every corner of the globe!
                     </p>

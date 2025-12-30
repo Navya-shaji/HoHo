@@ -21,7 +21,7 @@ function parseTimeToMinutes(timeStr) {
  */
 export function getCurrentSantaLocation() {
     const now = new Date();
-    const currentYear = now.getFullYear();
+   
     const currentMonth = now.getMonth(); // 0-indexed (0 = January, 11 = December)
     const currentDate = now.getDate();
     const currentHours = now.getHours();
@@ -97,7 +97,7 @@ export function getCurrentSantaLocation() {
         progress: calculateProgress(locationIndex, route.length),
         isActive: false,
         isDemoMode: true,
-        message: "Demo mode: Santa moves every 2 minutes. Visit on Christmas Eve for real-time tracking!",
+       
     };
 }
 
