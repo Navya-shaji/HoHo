@@ -13,12 +13,12 @@ function Header() {
         <header className="header">
             <div className="header-content">
                 <Link to="/" className="logo" onClick={closeMenu}>
-                    <span className="logo-santa">🎅</span>
+                    <span className="logo-santa"></span>
                     <span>HOHO</span>
                 </Link>
 
                 <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
-                    {isMenuOpen ? <X size={24} color="#ff6b6b" /> : <Menu size={24} color="#ff6b6b" />}
+                    {isMenuOpen ? <X size={24} color="#7a0404ff" /> : <Menu size={24} color="#4d0606ff" />}
                 </button>
 
                 <nav className={`nav-container ${isMenuOpen ? 'mobile-open' : ''}`}>
