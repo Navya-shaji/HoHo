@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
-import SantaMap from '../components/tracker/SantaMap';
-import StoryPanel from '../components/tracker/StoryPanel';
 import CountdownTimer from '../components/tracker/CountdownTimer';
-import StatsPanel from '../components/tracker/StatsPanel';
 import santaRouteData from '../data/santaRoute.json';
 import storiesData from '../data/stories.json';
 import {
