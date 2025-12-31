@@ -5,9 +5,9 @@ Welcome to **HOHO**, the ultimate Christmas companion web application! This app 
 ## ✨ Features
 
 ### 🌍 Santa Tracker & Journey Log
-- **Live Map:** Track Santa's sleigh as he visits countries around the world.
+
 - **Santa's Travel Log:** A personal diary style log where you can read unique stories about Christmas traditions in every city Santa visits, signed by Santa himself!
-- **Real-time Stats:** Monitor gifts delivered, distance traveled, and upcoming stops.
+
 
 ### 🎮 Mini Games ("Santa's Workshop")
 - **Gift Catcher:** A fun game to catch falling presents.
